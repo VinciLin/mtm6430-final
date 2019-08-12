@@ -1,13 +1,14 @@
 <template>
-    <div class="dashboard">
-        <div class="info rounded text-center">
+    <div class="dashboard container">
+        <div class="row">
+        <div class="info rounded text-center col-sm-6">
             <h1 class="text-primary">Welcome {{ user.name }}</h1>
             </br><h6>Your log in email is: </br><b> {{ user.email }}</b></h6>
             <h6>Your age is: </br><b> {{ user.age }}</b></h6>
             <h6>Your city is: </br><b> {{user.city }}</b></h6>
             <h6>Your job is: </br><b> {{user.job }}</b></h6>
         </div>
-        
+        <div col-sm-6>
         <form @submit.prevent="submitForm" class="text-center bg-primary text-white rounded">
             <h1>Dashboard</h1>
             <h6>You can change your information here: </h6>
@@ -35,8 +36,9 @@
             </div>
             <br>
             <button type="submit"  value="Submit" class="btn btn-warning">Submit</button>
-            <!-- <input type="submit"  value="Submit" /> -->
         </form>
+        </div>
+        </div>
     </div>
 </template>
 <script>

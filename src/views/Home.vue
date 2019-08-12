@@ -1,10 +1,7 @@
 <template>
-
     <div class=" card text-center bg-primary text-white rounded" style="max-width: 45rem; height: 25rem; margin: auto; margin-top: 3rem;">
-      
       <h1>Welcome to My app</h1>
-      
-      <div class="card-body" style="">
+      <div class="card-body">
         <p class="card-text">Please sign up if you are not a user. 
           <br/>If you already have an account, please sign in.</p>
 
