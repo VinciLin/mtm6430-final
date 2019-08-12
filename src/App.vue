@@ -7,12 +7,8 @@
       <router-link v-if="auth" :to="{ name: 'dashboard' }">Dashboard</router-link>
       <a v-if="auth" class="logout" @click="logout"> Log Out</a>
     </div>
-
-    <!-- if the error is set, diaplay the div, the info of the div is the {{error}} -->
     <div class="error" @click="clearError" v-if="error">{{error}}</div>
-
     <router-view />
-    
   </div>
 </template>
 
@@ -21,11 +17,10 @@ import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
 
 import { mapState, mapActions, mapGetters} from "vuex";
-// set the error message as global function
+
 export default {
   computed: {
     ...mapState(["error"]),
-// 如果sign in则只显示dashboard，如果不是则会显示 sign in  和 sign up
     ...mapGetters({
       auth: "isauthenticated"
     })

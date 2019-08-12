@@ -1,6 +1,6 @@
 <template>
     <div>
-        <!-- Sign In Form -->
+       
         <form @submit.prevent="onSubmit" class="text-center bg-primary text-white rounded">
             <h1>Sign In</h1>
             <div class="row">

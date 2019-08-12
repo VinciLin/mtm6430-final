@@ -1,9 +1,7 @@
 <template>
     <div>
-        <!-- Sign Up Form -->
         <form @submit.prevent="onSubmit" class="text-center bg-primary text-white rounded">
             <h1>Sign Up</h1>
-
             <div class="row">
                 <div class="col-6">
                     <label for="name">Name</label>
@@ -78,10 +76,8 @@ h1 {
 }
 
 form {
-    /* color: white; */
+    
     padding: 2rem;
-    /* background: #17a2b8 !important; */
-    /* box-shadow: -1px 1px 10px; */
     max-width: 30rem;
     margin: 0 auto;
 }
